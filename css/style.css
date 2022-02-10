@@ -136,6 +136,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 140%;
   color: #FFFFFF;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.header__link:hover {
+  background-color: #FFFFFF;
+  border: 5px solid #0082F3;
+  color: #0082F3;
 }
 
 .header__nav .nav__link {

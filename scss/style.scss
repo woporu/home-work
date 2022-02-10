@@ -55,6 +55,12 @@ $color_blue: #0082F3;
             font-size: 18px;
             line-height: 140%;
             color: #FFFFFF;
+            transition: all 0.5s ease-out;
+                &:hover {
+                    background-color: #FFFFFF;
+                    border: 5px solid $color_blue;
+                    color: $color_blue;
+                }
 		}
 }
 
