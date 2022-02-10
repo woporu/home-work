@@ -1,1 +1,78 @@
 @import "_resetstyle";
+
+//переменные
+$color_black: #1B2534;
+$color_blue: #0082F3;
+
+
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.header {
+
+		&__container {
+		}
+
+		&__row {
+            padding: 50px 40px;
+            display: flex;
+            justify-content: space-between;
+		}
+
+		&__logo {
+            width: 184px;
+            height: 60px;
+		}
+
+		&__nav {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+		}
+
+		&__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 212px;
+            height: 60px;
+            background-color: $color_black;
+            border-radius: 17px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 140%;
+            color: #FFFFFF;
+		}
+}
+
+.header__nav {
+		.nav__link {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 111%;
+            color: $color_black;
+            transition: all 0.5s ease-out;
+            &:hover {
+                color: $color_blue;
+            }
+		}
+}
+.main {
+}
+.footer {
+}
