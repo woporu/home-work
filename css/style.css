@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .business__row {
-  padding: 150px 0px 520px 0px;
+  padding: 370px 0px 520px 0px;
   position: relative;
   z-index: 2;
   display: -webkit-box;
@@ -268,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 80px;
+  font-size: 50px;
   line-height: 130%;
   text-align: center;
   color: #1B2534;
@@ -276,6 +276,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .business__row h1 span {
   color: #29A0F5;
+}
+
+@media (min-width: 570px) {
+  .business__row h1 {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 570px) {
+  .business__row {
+    padding: 200px 0px 520px 0px;
+  }
+}
+
+@media (min-width: 960px) {
+  .business__row {
+    padding: 150px 0px 520px 0px;
+  }
 }
 
 .business__bg {
@@ -317,6 +335,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 100%;
   letter-spacing: 0.4px;
   color: #1B2534;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .business__button::after {
@@ -325,4 +345,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 30px;
   height: 19px;
   background: no-repeat url("../img/main/Business/button__arrow.svg");
+}
+
+.business__button:hover {
+  border: 5px solid #0082F3;
+  color: #0082F3;
 }
