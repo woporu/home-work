@@ -70,6 +70,26 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
+.business__title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 130%;
+  text-align: center;
+  color: #1B2534;
+}
+
+.business__title span {
+  color: #29A0F5;
+}
+
+@media (min-width: 570px) {
+  .business__title {
+    font-size: 80px;
+  }
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -262,26 +282,6 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   gap: 35px;
-}
-
-.business__row h1 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  line-height: 130%;
-  text-align: center;
-  color: #1B2534;
-}
-
-.business__row h1 span {
-  color: #29A0F5;
-}
-
-@media (min-width: 570px) {
-  .business__row h1 {
-    font-size: 80px;
-  }
 }
 
 @media (min-width: 570px) {
