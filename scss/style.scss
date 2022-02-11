@@ -68,7 +68,7 @@ $color_blue: #0082F3;
             @media(min-width: 625px){
                 order: 2;
             }
-            .header__nav-item {
+            .menu__list {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -112,8 +112,8 @@ $color_blue: #0082F3;
 		}
 }
 
-.header__nav-item {
-		.nav__link {
+.menu__list {
+		.menu__link {
             font-family: Open Sans;
             font-style: normal;
             font-weight: normal;
