@@ -20,7 +20,21 @@ $color_blue: #0082F3;
         font-size: 80px;
     }
 }
-
+%midtitle {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 130%;
+    text-align: center;
+    color:$color_black;
+    span {
+        color: #29A0F5;
+    }
+    @media(min-width: 570px){
+        font-size: 80px;
+    }
+}
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -133,7 +147,8 @@ $color_blue: #0082F3;
 // main
 .main {
 }
-    // business section
+
+// business section
 .business {
     position: relative;
     max-height: 1086px;
@@ -206,5 +221,77 @@ $color_blue: #0082F3;
         }
 	}
 }
+
+//app-demo
+.app-demo {
+    display: none;
+
+    @media(min-width: 768px){
+        display: block;
+    }
+    &__container {
+    }
+
+    &__image {
+        margin-top: -440px;
+        position: relative;
+        padding: 0px 0px 58% 0px;
+        img {
+            border-radius: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+//perfect
+
+.perfect {
+
+    &__container {
+    }
+
+    &__row {
+    }
+
+    &__content {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__items {
+    }
+
+    &__item {
+    }
+
+    &__image {
+    }
+}
+
+.item-perfect {
+
+    &__icon {
+    }
+
+    &__body {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+}
+
+
 .footer {
 }
