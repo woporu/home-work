@@ -103,6 +103,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #29A0F5;
 }
 
+.tools__title, .support__title, .watchandlearn__title, .media__title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 130%;
+  color: #1B2534;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -704,4 +713,179 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 140%;
   text-align: center;
   color: #FFFFFF;
+}
+
+.importanttools {
+  background: #F6F6F6;
+}
+
+.importanttools__top {
+  max-height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.importanttools__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.tools__row {
+  padding: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+
+.tools__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.support__row {
+  padding: 40px 40px 0px 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+
+.monitor__row {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+
+.watchandlearn__row {
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+  background: #1B2534;
+  border-radius: 20px;
+}
+
+.watchandlearn__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.watchandlearn__title {
+  text-align: end;
+  color: #FFFFFF;
+}
+
+.watchandlearn__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 234px;
+  height: 72px;
+  background: #29A0F5;
+  border: 1px solid #29A0F5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+}
+
+.watchandlearn__button::after {
+  content: '';
+  margin-left: 20px;
+  width: 37px;
+  height: 19px;
+  background: no-repeat url("../img/main/Importanttools/watch/arrow_icon.svg");
+}
+
+.media__row {
+  padding: 0px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+
+.media__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
 }
