@@ -799,10 +799,19 @@ $color_blue: #0082F3;
     }
 
     &__body {
-        padding: 140px 50px;
+        padding: 35px 5px;
         display: flex;
-        align-items: center;
-        gap: 50px;
+        flex-wrap: wrap;
+        gap: 10px;
+        @media(min-width: 426px){
+            padding: 70px 25px;
+        }
+        @media(min-width: 1025px){
+            gap: 50px;
+            padding: 140px 50px;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
     }
 
     &__content {
@@ -854,8 +863,10 @@ $color_blue: #0082F3;
 
     &__image {
         img {
-            // max-width: 100%;
             border-radius: 40px;
+            @media(max-width: 1024px){
+                max-width: 100%;
+            }
         }
     }
 }
