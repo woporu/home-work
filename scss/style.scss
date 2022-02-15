@@ -492,6 +492,7 @@ $color_blue: #0082F3;
 
 .importanttools {
     background: #F6F6F6;
+    padding: 0px 5px;
     &__container {
     }
 
@@ -499,11 +500,16 @@ $color_blue: #0082F3;
     }
 
     &__top {
-        max-height: 250px;
+        padding: 5px;
         display: flex;
-        // flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
         gap: 15px;
         margin-bottom: 40px;
+        @media(min-width: 1234px){
+            flex-wrap: nowrap;
+        }
+
     }
 
     &__bottom {
@@ -514,33 +520,58 @@ $color_blue: #0082F3;
 
 .tools {
     &__row {
+        order: 1;
         padding: 40px;
-        flex: 1 0 25%;
+        flex: 0 1 100%;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        align-items: center;
+        gap: 10px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
         border-radius: 20px;
         background: #FFFFFF;
+        @media(min-width: 528px){
+            flex: 0 1 50%;
+        }
+        @media(min-width: 1234px){
+            gap: 30px;
+            flex: 0 1 25%;
+        }
     }
 
     &__title {
-        @extend %smalltitle
+        @extend %smalltitle;
     }
 
     &__icons {
         display: flex;
-        justify-content: space-between;
+        gap: 20px;
+        justify-content: center;
+        @media(min-width: 1024px){
+            justify-content: space-between;
+        }
     }
 }
 .support {
     &__row {
-        padding: 40px 40px 0px 40px;
-        flex: 1 0 50%;
+        order: 3;
+        padding: 20px 20px 0px 20px;
+        flex: 1 1 100%;
         display: flex;
+        flex-wrap: wrap;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
         border-radius: 20px;
         background: #FFFFFF;
+        img {
+            max-width: 100%;
+        }
+        @media(min-width: 646px){
+            padding: 40px 40px 0px 40px;
+            flex-wrap: nowrap;
+        }
+        @media(min-width: 1234px){
+            order: 2;
+        }
     }
 
     &__title {
@@ -549,13 +580,21 @@ $color_blue: #0082F3;
 }
 
 .monitor__row {
-    flex: 1 0 25%;
+    order: 2;
+    padding: 10px;
+    flex: 0 1 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
     background: #FFFFFF;
+    @media(min-width: 528px){
+        flex: 0 1 25%;
+    }
+    @media(min-width: 1234px){
+        order: 3;
+    }
 }
 
 .watchandlearn {
