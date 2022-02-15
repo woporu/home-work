@@ -514,7 +514,13 @@ $color_blue: #0082F3;
 
     &__bottom {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        @media(min-width: 1239px){
+            justify-content: flex-end;
+            gap: 0px;
+        }
     }
 }
 
@@ -600,11 +606,19 @@ $color_blue: #0082F3;
 .watchandlearn {
 
     &__row {
-        padding: 0px 20px;
+        padding: 5px 20px;
         display: flex;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
         background: #1B2534;
         border-radius: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+            max-width: 100%;
+        }
+        @media(min-width: 828px){
+            flex-wrap: nowrap;
+        }
     }
 
     &__content {
@@ -637,6 +651,10 @@ $color_blue: #0082F3;
         line-height: 100%;
         letter-spacing: 0.4px;
         color: #FFFFFF;
+        transition: all 0.5s ease-out;
+        &:hover {
+            border: 5px solid #FFFFFF;
+        }
         &::after {
             content: '';
             margin-left: 20px;
@@ -649,15 +667,18 @@ $color_blue: #0082F3;
 .media {
 
     &__row {
-        padding: 0px 40px;
+        padding: 5px 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 10px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
         border-radius: 20px;
         background: #FFFFFF;
+        @media(min-width: 426px){
+            gap: 50px;
+        }
     }
 
     &__title {
@@ -666,7 +687,11 @@ $color_blue: #0082F3;
 
     &__icons {
         display: flex;
-        gap: 50px;
+        justify-content: center;
+        gap: 10px;
+        @media(min-width: 426px){
+            gap: 50px;
+        }
     }
 }
 
