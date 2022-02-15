@@ -871,6 +871,54 @@ $color_blue: #0082F3;
     }
 }
 
+// lovedby section
+
+.lovedby {
+
+    &__container {
+    }
+
+    &__row {
+        padding: 70px 5px 90px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        @media(min-width: 426px){
+            gap: 40px;
+        }
+        @media(min-width: 1248px){
+            gap: 70px;
+            padding: 140px 5px 180px 5px;
+        }
+    }
+
+    &__title {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 140%;
+        text-align: center;
+        color: #1B2534;
+    }
+
+    &__brands {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        @media(min-width: 426px){
+            gap: 40px;
+        }
+        @media(min-width: 1248px){
+            gap: 80px;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
 
 //footer
 .footer {
