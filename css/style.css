@@ -1498,7 +1498,7 @@ h1, h2, h3, h4, h5, h6 {
     content: ' ';
     position: absolute;
     top: 12px;
-    right: 5px;
+    right: 2px;
     width: 5px;
     height: 5px;
     background: url(../img/main/Blogs/blogs_icons/Rectangle.png);
