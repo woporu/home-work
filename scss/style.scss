@@ -918,6 +918,139 @@ $color_blue: #0082F3;
         }
     }
 }
+// blogs section
+
+.blogs {
+
+    &__container {
+    }
+
+    &__body {
+        padding: 10px 5px 280px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 85px;
+    }
+
+    &__columns {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+
+    &__title {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 120%;
+        color: $color_black;
+    }
+
+    &__text {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 160%;
+        color: #606060;
+    }
+
+    &__authors {
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: 76px 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "icon name name"
+            "icon date section";
+    }
+
+    &__button {
+        width: 227px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0.4px;
+        color: #FFFFFF;
+        background: #29A0F5;
+        border-radius: 20px;
+        transition: all 0.5s ease-out;
+        &::after {
+            content: '';
+            margin-left: 20px;
+            width: 38px;
+            height: 20px;
+            background:no-repeat url("../img/main/Blogs/blogs_icons/arrow_icon.svg");
+        }
+        &:hover {
+            border: 5px solid #FFFFFF;
+        }
+    }
+}
+
+.author {
+
+    &__icon {
+        grid-area: icon;
+    }
+
+    &__name {
+        grid-area: name;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 140%;
+        color: $color_black;
+    }
+
+    &__date {
+        grid-area: date;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 160%;
+        color: #606060;
+        position: relative;
+        &::after {
+            content: ' ';
+            position: absolute;
+            top: 12px;
+            right: 5px;
+            width: 5px;
+            height: 5px;
+            background: url(../img/main/Blogs/blogs_icons/Rectangle.png) ;
+        }
+    }
+
+    &__section {
+        grid-area: section;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 160%;
+        color: #606060;
+    }
+}
 
 
 //footer
