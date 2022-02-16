@@ -935,13 +935,25 @@ $color_blue: #0082F3;
 
     &__columns {
         display: flex;
-        gap: 20px;
+        justify-content: space-between;
+        gap: 40px;
+        flex-wrap: wrap;
+        @media(min-width: 769px){
+            flex-wrap: nowrap;
+        }
     }
 
     &__column {
+        flex: 0 1 100%;
         display: flex;
         flex-direction: column;
         gap: 25px;
+        @media(min-width: 426px){
+            flex: 0 1 45%;
+        }
+        @media(min-width: 769px){
+            flex: 0 1 33.33%;
+        }
     }
 
     &__image {
@@ -969,11 +981,21 @@ $color_blue: #0082F3;
     &__authors {
         margin-top: 35px;
         display: grid;
-        grid-template-columns: 76px 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 76px 1fr 1fr;
+        grid-template-columns: auto;
         grid-template-areas: 
-            "icon name name"
-            "icon date section";
+            "icon"
+            "name"
+            "date"
+            "section";
+        @media(min-width: 1025px){
+            display: grid;
+            grid-template-columns: 76px 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "icon name name"
+                "icon date section";
+        }
     }
 
     &__button {
@@ -1012,6 +1034,7 @@ $color_blue: #0082F3;
     }
 
     &__name {
+        margin-right: 5px;
         grid-area: name;
         font-family: Open Sans;
         font-style: normal;
@@ -1030,14 +1053,16 @@ $color_blue: #0082F3;
         line-height: 160%;
         color: #606060;
         position: relative;
-        &::after {
-            content: ' ';
-            position: absolute;
-            top: 12px;
-            right: 5px;
-            width: 5px;
-            height: 5px;
-            background: url(../img/main/Blogs/blogs_icons/Rectangle.png) ;
+        @media(min-width: 1025px){
+            &::after {
+                content: ' ';
+                position: absolute;
+                top: 12px;
+                right: 5px;
+                width: 5px;
+                height: 5px;
+                background: url(../img/main/Blogs/blogs_icons/Rectangle.png) ;
+            }
         }
     }
 
