@@ -926,11 +926,14 @@ $color_blue: #0082F3;
     }
 
     &__body {
-        padding: 10px 5px 280px 5px;
+        padding: 10px 5px 80px 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 85px;
+        @media(min-width: 426px){
+            padding: 10px 5px 280px 5px;
+        }
     }
 
     &__columns {
@@ -1074,6 +1077,77 @@ $color_blue: #0082F3;
         font-size: 18px;
         line-height: 160%;
         color: #606060;
+    }
+}
+
+// potential section
+
+.potential {
+
+    &__container {
+    }
+
+    &__body {
+        padding: 0px 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    &__content {
+        padding: 20px 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @media(min-width: 769px){
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+
+    &__title {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 65px;
+        line-height: 130%;
+        color: #1B2534;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 72px;
+        width: 261px;
+        background: #1B2534;
+        border-radius: 20px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        color: #FFFFFF;
+        transition: all 0.5s ease-out;
+        &::after {
+            content: '';
+            margin-left: 20px;
+            width: 37px;
+            height: 22px;
+            background:no-repeat url("../img/main/Potential/arrow_vector.svg");
+        }
+        &:hover {
+            border: 5px solid $color_blue;
+            color: $color_blue;
+            background: #FFFFFF;
+        }
+    }
+
+    &__image {
+        @media(max-width: 426px){
+            display: none;
+        }
     }
 }
 
