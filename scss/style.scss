@@ -1154,4 +1154,67 @@ $color_blue: #0082F3;
 
 //footer
 .footer {
+    background-color: $color_black;
+    &__container {
+    }
+
+    &__content {
+        padding: 140px 5px 60px 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__body {
+        display: flex;
+    }
+
+    &__logo {
+        flex: 0 1 25%;
+    }
+
+    &__navs {
+        flex: 0 1 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        
+    }
+
+    &__frame {
+        flex: 0 1 25%;
+    }
+
+    &__copyright {
+    }
+}
+
+.logo {
+
+    &__image {
+    }
+
+    &__text {
+    }
+
+    &__socials {
+    }
+
+    &__link {
+    }
+}
+.nav {
+
+    &__title {
+    }
+
+    &__list {
+    }
+
+    &__list-item {
+    }
+
+    &__list-link {
+    }
 }
