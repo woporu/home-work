@@ -1190,13 +1190,12 @@ $color_blue: #0082F3;
         padding: 15px 5px;
         flex: 0 1 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         background: #283343;
         border-radius: 30px;
         @media(min-width: 426px){
             padding: 35px 20px;
-            justify-content: space-between;
         }
         @media(min-width: 1024px){
             padding: 70px 40px;
